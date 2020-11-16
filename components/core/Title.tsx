@@ -6,6 +6,6 @@ export const Title = styled("h1")(
   css((theme) => ({
     color: theme.colors.typography.heading,
     fontSize: theme.fontSizes.h1,
-    my: 4,
+    margin: 0,
   }))
 );

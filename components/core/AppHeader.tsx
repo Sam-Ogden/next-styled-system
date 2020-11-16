@@ -37,7 +37,7 @@ export const AppHeader = ({
       >
         <Box
           display='flex'
-          height={44}
+          height={35}
           width={["100%", "75%", "50%"]}
           alignItems='center'
         >

@@ -57,11 +57,11 @@ const theme: Theme = {
 };
 
 theme.fontSizes.body = theme.fontSizes[3];
-theme.fontSizes.h1 = theme.fontSizes[7];
-theme.fontSizes.h2 = theme.fontSizes[6];
-theme.fontSizes.h3 = theme.fontSizes[5];
-theme.fontSizes.h4 = theme.fontSizes[4];
-theme.fontSizes.h5 = theme.fontSizes[4];
-theme.fontSizes.h6 = theme.fontSizes[4];
+theme.fontSizes.h1 = theme.fontSizes[6];
+theme.fontSizes.h2 = theme.fontSizes[5];
+theme.fontSizes.h3 = theme.fontSizes[4];
+theme.fontSizes.h4 = theme.fontSizes[3];
+theme.fontSizes.h5 = theme.fontSizes[3];
+theme.fontSizes.h6 = theme.fontSizes[3];
 
 export default theme;

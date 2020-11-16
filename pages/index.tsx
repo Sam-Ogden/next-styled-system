@@ -1,5 +1,4 @@
 import Head from "next/head";
-import css from "@styled-system/css";
 import {
   Box,
   Title,
@@ -17,6 +16,23 @@ type ButtonVariants =
   | "success"
   | "info";
 
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+const today = new Date();
+
 export default function Home() {
   return (
     <>
@@ -25,30 +41,34 @@ export default function Home() {
       </Head>
       <AppHeader
         Logo={() => (
-          <Text fontWeight='bold' fontSize='5' color='primary.dark'>
-            system
-          </Text>
+          <Link href='/'>
+            <Text fontWeight='bold' fontSize='5' color='primary.dark'>
+              site diary
+            </Text>
+          </Link>
         )}
         Links={(props: any) => (
           <>
-            <Link href='#' {...props}>
-              Home
+            <Link href='/change-job' {...props}>
+              Change job
             </Link>
-            <Link href='#' {...props}>
-              Dashboard
-            </Link>
-            <Link href='#' {...props}>
-              About
-            </Link>
-            <Link href='#' {...props}>
-              Contact
+            <Link href='/logout' {...props}>
+              Logout
             </Link>
           </>
         )}
       />
       <Box px={[3, 0]} display='flex' justifyContent='center'>
         <Box maxWidth={["100%", "75%", "50%"]}>
-          <Title>Next.js with Styled System</Title>
+          <Box mb={3} mt={2}>
+            <Title>
+              {today.getDate()} {months[today.getMonth()]},{" "}
+              {today.getFullYear()}
+            </Title>
+            <Text color='gray.600' fontSize={2}>
+              Municipal, Liverpool
+            </Text>
+          </Box>
           <Text textAlign='justify'>
             Elit non proident mollit aliquip aliqua do anim ex duis ad est
             veniam. Voluptate laborum cupidatat anim ipsum consequat id eu

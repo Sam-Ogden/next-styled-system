@@ -19,7 +19,7 @@ export const Text = styled.p<TypographyProps & TextAlignProps & ColorProps>(
   css((theme) => ({
     color: theme.colors.typography.body,
     fontSize: theme.fontSizes.body,
-    my: 3,
+    margin: 0,
   })),
   typography,
   textAlign,
