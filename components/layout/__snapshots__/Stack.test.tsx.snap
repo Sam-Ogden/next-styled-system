@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stack component should render stack child margin top 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 *:not(:first-child) {
+  margin-top: 16px;
+}
+
+<div
+    class="c0"
+  >
+    <div>
+      item1
+    </div>
+    <div>
+      item2
+    </div>
+  </div>
+</DocumentFragment>
+`;
